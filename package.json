@@ -1,0 +1,25 @@
+{
+	"name": "volume-checker",
+	"version": "1.0.0",
+	"description": "checks Jupiter and ME volume using Cypress",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/0xAnjing/volume-checker.git"
+	},
+	"author": "0xAnjing",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/0xAnjing/volume-checker/issues"
+	},
+	"homepage": "https://github.com/0xAnjing/volume-checker#readme",
+	"dependencies": {
+		"@flipsidecrypto/sdk": "^2.1.0",
+		"dotenv": "^16.4.7",
+		"fs": "^0.0.1-security"
+	},
+	"type": "module"
+}
