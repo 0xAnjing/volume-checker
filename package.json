@@ -18,6 +18,7 @@
 	"homepage": "https://github.com/0xAnjing/volume-checker#readme",
 	"dependencies": {
 		"@flipsidecrypto/sdk": "^2.1.0",
+		"@solana/web3.js": "^1.95.8",
 		"dotenv": "^16.4.7",
 		"fs": "^0.0.1-security"
 	},

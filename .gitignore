@@ -1,4 +1,7 @@
 /node_modules
 
+/output/output.csv
+
 .env
-addresses.txt
+/wallets/*.txt
+/wallets/*.json

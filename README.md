@@ -15,9 +15,11 @@
 
 # Usage
 
-1. Run `cp addresses.txt.example addresses.txt`
+1. Run `cp ./wallets/addresses.txt.example ./wallets/addresses.txt`
 2. Paste your wallet public addresses into `addresses.txt` file
 
 - One line for each wallet
 
-3. Run `node index.js`
+3. Paste all json files containing your private keys into `./wallets` folder
+4. Run `node index.js`
+5. Check the `./output/output.csv` file for the results
