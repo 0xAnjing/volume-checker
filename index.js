@@ -79,9 +79,18 @@ async function getVolume(wallet) {
 	`;
 
 	// Send the `Query` to Flipside's query engine and await the results
-	const queryResultSet = await flipside.query.run({ sql: sql });
+	try {
+		const queryResultSet = await flipside.query.run({ sql: sql });
 
-	return queryResultSet.records[0].total;
+		if (queryResultSet.error) {
+			return queryResultSet.error;
+		}
+
+		return queryResultSet.records[0].total;
+	} catch (e) {
+		console.log(e);
+		return e;
+	}
 }
 
 function writeToFile(stream, filename, address, volume) {
